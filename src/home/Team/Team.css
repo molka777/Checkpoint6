@@ -1,0 +1,182 @@
+body {
+  letter-spacing: 3px;
+
+}
+
+ul li a {
+  margin-right: 20px 7px !important;
+}
+
+ 
+
+.bg-light {
+  background-color: #f8f9fadb !important;
+}
+.button{ color: #093219;
+  padding: 1%;
+  width: 32%;
+  font-weight: bold;
+  margin: 2%;
+  height: 111px;
+  letter-spacing: 3px;
+}
+.logo {
+  height: 107px;
+  width: 251px;
+  MARGIN-LEFT: -1%;
+}
+
+
+.bloc1 {
+  width: 60%;
+  text-align: justify;
+  color: #40531e;
+  font-size: small;
+  font: 10px sans-serif;
+  padding: 0px 10px;
+  margin-top: 54px;
+  margin-left: 260px;
+  margin-bottom: 3%;
+
+}
+
+.border {
+  border: 2px solid#dee2e6 !important;
+}
+
+.bloc2 {
+  width: 30%;
+  color: #40531e;
+  font: sans-serif;
+  padding: 0px 10px;
+
+
+}
+
+.description {
+  width: 30%;
+  text-align: justify;
+  color: #40531e;
+  font: 10px sans-serif;
+}
+
+
+
+
+.video {
+  text-align: center;
+  font: 20px sans-serif;
+  margin-top: 4%;
+  margin-bottom: 2%;
+
+
+}
+
+.icone {
+  width: 5%;
+  height: 93%;}
+  .nav-link {
+    display: block;
+    padding: 0%;
+}
+.part{
+  width: 20%;
+  
+}
+.name1 {
+  color: #093219;
+  margin-left: 4%
+}
+.teaminfo{top: -659px;
+  z-index: 1000;
+  position: relative;}
+  .teaminfoRow2{
+    top: -498px;
+    z-index: 1000;
+    position: relative;
+  }
+  
+.bold {
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #093219;
+  margin: 2%;
+}
+
+.paragraph {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 21px;
+  text-align: center;
+  color: #343d37;
+
+
+}
+
+.flex-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#autoplay {
+width: 100%; 
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #40531e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #8bbb37;
+}
+
+.contact {
+  width: 50%;
+  color: #40531e;
+  margin-left: 350px;
+  font: 20px sans-serif;
+
+
+}
+
+.links {
+  width: 100%;
+}
+
+.links a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: 20px system-ui;
+  margin-left: 9%;
+}
+
+.footer {
+  width: 16%;
+  text-decoration: none;
+}
+

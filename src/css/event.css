@@ -1,0 +1,237 @@
+body {
+    letter-spacing: 3px;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+ul li a {
+    margin-right: 20px 7px !important;
+}
+
+
+.bg-light {
+    background-color: #f8f9fadb !important;
+}
+
+.logo {
+    float: right;
+    height: 91px;
+    width: 223px;
+}
+
+/* fonts  */
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#container {
+    box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 350px;
+    width: 300px;
+
+}
+
+.title3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #093219;
+    margin: 2%;
+    font-size: xx-large;
+
+}
+.title {
+    text-transform: uppercase;
+    color: #093219;
+    margin: 3%;
+    text-align: center;
+    font-size: xxx-large;
+   
+}
+
+
+
+
+/* 	Product Name */
+#container .product-details h1 {
+    font-family: 'Old Standard TT', serif;
+    display: inline-block;
+    position: relative;
+    font-size: 34px;
+    color: #344055;
+    margin: 0;
+
+}
+
+#container .product-details h1:before {
+    position: absolute;
+    content: '';
+    right: 0%;
+    top: 0%;
+    transform: translate(25px, -15px);
+    font-family: 'Farsan', cursive;
+    display: inline-block;
+    background: #FFA69E;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    color: #FFF;
+    margin: 0;
+    animation: chan-sh 6s ease infinite;
+
+}
+
+
+@keyframes chan-sh {
+    from {
+        content: 'free shipping';
+    }
+
+    to {
+        content: 'New';
+    }
+
+}
+
+/*Product Rating  */
+.hint-star {
+    display: inline-block;
+    margin-left: 0.5em;
+    color: gold;
+    width: 50%;
+}
+
+
+
+/* control */
+
+.control {
+    position: absolute;
+    bottom: 20%;
+    left: 22.8%;
+
+}
+
+
+
+.btn:hover .shopping-cart {
+    transform: translateX(0%);
+}
+
+
+
+/* product image  */
+.product-image {
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    margin: 12%;
+    height: 80%;
+
+}
+
+#container img {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    background: #04140acc;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 80%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+.info h2 {
+    text-align: center
+}
+
+.product-image:hover .info {
+    transform: translateX(0);
+}
+
+
+
+
+
+.product-image:hover img {
+    transition: all 0.3s ease-out;
+}
+
+.product-image:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.icone {
+    width: 5%;
+    height: 93%;}
+    .nav-link {
+      display: block;
+      padding: 0;
+  }
+
+.footer {
+    width: 16%;
+    text-decoration: none;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(9, 50, 25, 0.3) !important;
+}
+
+#carouselExampleFade {
+    width: 51%;
+    margin: 2%;
+    margin-left: 25%;
+
+}
+
+#carouselExampleInterval {
+    width: 274%;
+    margin: 2%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #00b39b;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    color: grey;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent !important;
+
+}
+.détails{list-style-type: none;
+    margin-left: -4%;
+    margin-top: 20%;}
+    

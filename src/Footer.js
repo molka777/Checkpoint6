@@ -6,6 +6,8 @@ import instagram from './res/instagram.png'
 import logoFooter from './res/logofooter2.png'
 import phone from './res/phone.png'
 import destination from './res/destination.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Footer = () => {
 
