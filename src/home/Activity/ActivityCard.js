@@ -7,7 +7,10 @@ const ActivityCard = (props) => {
         <Card style={{ width: '25rem', border: '1px solid #adb5bd', marginBottom: '3%', boxShadow: '0 .125rem .25rem rgba(0,0,0,.075)!important' }}>
             <Card.Img variant="top" src={props.imageUrl} style={{ width: '100%' }} />
             <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
+                <Card.Title style={{
+                    fontSize: 'x-large',
+                    textTransform: 'uppercase'
+                }}>{props.title}</Card.Title>
                 <div>
                     <Card.Text>
                         {props.paragraph}

@@ -8,17 +8,19 @@ import moment4 from '.././res/SKZ033434K.jpg';
 import moment5 from '.././res/SKZ033734K.jpg';
 import moment6 from '.././res/SKZ035154K.jpg';
 import moment7 from '.././res/SKZ035564K.jpg';
+import Carousel from 'react-bootstrap/Carousel';
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EventList from './EventList';
-import Menu2 from '../Navbar/Menu2';
+import Menu3 from '../Navbar/Menu3';
 
 const Event = () => {
 
     return (<>
-        <Menu2 />
-        <h1 id="about" className="title" style={{ marginLeft: '5%' }}>LES ÉVÈNEMENTS</h1>
+        <Menu3 />
+        <h1 id="about" className="title" style={{ marginLeft: '5%', padding: '0%' }}>LES ÉVÈNEMENTS</h1>
         <img id="bloc" style={{ marginLeft: '10%' }} width="80%" src={event} alt="event" />
         <div className="album py-5 ">
             <div>
@@ -73,54 +75,98 @@ const Event = () => {
 </p>
 
 
-        <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item">
-                    <img src={moment1} className="d-block w-100" alt="1" />
-                </div>
-                <div className="carousel-item">
-                    <img src={moment2} className="d-block w-100" alt="2" />
-                </div>
-                <div className="carousel-item">
-                    <img src={moment3} className="d-block w-100" alt="3" />
-                </div>
-                <div className="carousel-item active">
-                    <img src={moment4} className="d-block w-100" alt="4" />
-                </div>
-                <div className="carousel-item">
-                    <img src={moment5} className="d-block w-100" alt="5" />
-                </div>
-                <div className="carousel-item">
-                    <img src={moment6} className="d-block w-100" alt="6" />
-                </div>
-                <div className="carousel-item">
-                    <img src={moment7} className="d-block w-100" alt="7" />
-                </div>
+        <Carousel style={{
+            margin: '18%',
+            marginTop: "1%"
+        }}>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={moment1}
+                    alt="First slide"
+                />
 
-            </div>
-            <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-            </a>
+
+
+
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={moment2}
+                    alt="Third slide"
+                />
+
+
+
+
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={moment3}
+                    alt="Third slide"
+                />
+
+
+
+
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={moment4}
+                    alt="Third slide"
+                />
+
+
+
+
+            </Carousel.Item><Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={moment5}
+                    alt="Third slide"
+                />
+
+
+
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={moment6}
+                    alt="Third slide"
+                />
+
+
+
+
+            </Carousel.Item> <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={moment7}
+                    alt="Third slide"
+                />
+
+
+
+
+            </Carousel.Item>
+        </Carousel>
+        <div>
+            <button type=" button" style={{
+                color: '#093219',
+                width: '9%',
+                marginLeft: '87%',
+                marginTop: '-3%'
+            }}
+                className="btn btn-light">
+                <a style={{ color: '#093219', fontSize: '17px', textDecoration: 'none' }} href="#bloc">
+                    Aller en haut </a>
+            </button>
         </div>
-        <div class="album py-5 bg-light">
-            <div>
-                <button type=" button" style={{
-                    color: '#093219',
-                    width: '9%',
-                    marginLeft: '87%',
-                    marginTop: '-3%'
-                }}
-                    className="btn btn-light">
-                    <a style={{ color: '#093219', fontSize: '17px', textDecoration: 'none' }} href="#bloc">
-                        Aller en haut </a>
-                </button>
-            </div>
-        </div>
+
     </>);
 
 };

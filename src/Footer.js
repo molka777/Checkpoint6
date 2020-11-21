@@ -1,11 +1,11 @@
 import React from "react";
 import './Footer.css';
-import mail from './res/mail.png';
-import facebook from './res/facebook.png';
+import mail from './res/mail.png'
+import facebook from './res/facebook.png'
 import instagram from './res/instagram.png'
 import logoFooter from './res/logofooter2.png'
 import phone from './res/phone.png'
-import destination from './res/destination.png'
+import destination from './res/destination (2).png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -60,15 +60,16 @@ const Footer = () => {
                         </div>
 
                         <div className="footer" style={{ width: '20%', lineHeight: '29px' }}>
-                            <img style={{
-                                width: '11',
-                                height: '12%'
-                            }} src={destination} alt="destination" />
+                            <a className="nav-link green"
+                                href="https://www.google.tn/maps/place/Tunisian+Campers+Company/@36.8096411,10.1837686,15z/data=!4m5!3m4!1s0x0:0x1fdae6316ff1ff65!8m2!3d36.8096411!4d10.1837686">  <img style={{
+                                    width: '11%',
+                                    marginLeft: '-4%'
+                                }} src={destination} alt="destination" />
           14 Avenue de Syrie étage 2, <br />
           Ain Zaghouan Nord, <br />
-          Le Kram, 2046 Tunisie<br />
-                            <img style={{ width: '9', height: '12%' }} src={phone} alt="phone" />+216 25885881
-        </div>
+          Le Kram, 2046 Tunisie<br /></a>
+                            <img style={{ width: '9', height: '12%' }} src={phone} alt="phone" /> <b>+216 25885881</b>
+                        </div>
                     </section>
                     <div style={{ display: 'flex', justifyContent: 'center', }}>
                         <div style={{ marginLeft: '44%' }}>

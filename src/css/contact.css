@@ -2,10 +2,6 @@
     box-shadow: 0 .125rem .25rem rgba(9, 50, 25, 0.3) !important;
 }
 
-.icone {
-    width: 5%;
-    height: 85%;
-}
 
 .footer {
     width: 16%;
@@ -112,7 +108,7 @@ h1 {
 
 .icone {
     width: 5%;
-    height: 93%;}
+    height: 4%;}
     .nav-link {
       display: block;
       padding: 0;
@@ -301,6 +297,9 @@ textarea {
         font-size: 0.875em;
     }
 }
+.icone {
+    width: 5%;
+    height: 102%;}
 .button{ color: #093219;
     padding: 1%;
     width: 32%;

@@ -13,6 +13,10 @@
       display: block;
       padding: 0%;
   }
+  a:hover {
+    color: #545b62;
+   
+}
   body {
     letter-spacing: 3px;
   

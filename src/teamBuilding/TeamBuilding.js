@@ -7,106 +7,138 @@ import photo3 from '.././res/SKA07211.jpg';
 import photo4 from '.././res/Sidi Medien,  Zaghouan 6.JPG';
 import photo5 from '.././res/IMG_7043.jpg';
 
-
+import { HashLink } from 'react-router-hash-link';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Menu2 from '../Navbar/Menu2';
+import Menu5 from '../Navbar/Menu5';
+import Carousel from 'react-bootstrap/Carousel';
+
 
 
 const TeamBuilding = () => {
     return (
-        <> <Menu2 />
-            <div className="album py-5 ">
-                <div>
-                    <button type=" button" style={{
-                        color: '#093219',
-                        width: '20%',
-                        marginLeft: '78%',
-                        marginBottom: '-1%'
-                    }}
-                        className="btn btn-light">
-                        <a style={{ color: '#093219', fontSize: '17px', textDecoration: 'none' }} href="#reserver">
-                            Réservez un team building</a>
-                    </button>
-                </div>
-            </div>
+        <>
+            <Menu5 />
+
             <body>
-                <h1 id="about" className="title">LE TEAM BUILDING OUTDOOR</h1>
-                <h2 className="title3"> Le Team building outdoor offre une expérience marquante et originale, <br /> qui
+                <h1 id="about" className="title" style={{ margin: '1%' }}>LE TEAM BUILDING OUTDOOR</h1>
+                <h2 className="title3" style={{ fontSize: 'large' }}> Le Team building outdoor offre une expérience marquante et originale, <br /> qui
         installe forcément une cohésion de groupe entre les membres d’une équipe.</h2>
+                <div className="album py-5 " style={{ marginTop: '-5%' }}>
+                    <div>
+                        <button type=" button" style={{
+                            color: '#093219',
+                            width: '20%',
+                            marginLeft: '40%',
+                            marginBottom: '-9%',
+                            marginTop: '-7%'
+                        }}
+                            className="btn btn-light">
 
-                <div id="carouselExampleIndicators" className="carousel slide caroussel" data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div className="carousel-inner">
-
-                        <div className="carousel-item active">
-
-                            <img src={photo} className="d-block w-100"
-                                alt="2" />
-                        </div>
-                        <div className="carousel-item">
-                            <img src={photo2} className="d-block w-100" alt="3" />
-                        </div>
-
-                        <div className="carousel-item">
-                            <img src={photo3} className="d-block w-100" alt="6" />
-                        </div>
-
+                            <HashLink
+                                to="/teamBuilding#reservation" style={{ color: '#093219', fontSize: '17px', textDecoration: 'none' }}
+                                scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'end' })}
+                            >Réserver</HashLink>
+                        </button>
                     </div>
-                    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="sr-only">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="sr-only">Next</span>
-                    </a>
                 </div>
+                <Carousel>
+                    <Carousel.Item >
+                        <img
+                            className="d-block w-100"
+                            src={photo}
+                            alt="First slide"
+                            style={{
+                                margin: '-10%',
+                                marginLeft: "10%"
+                            }}
+                        />
 
+
+
+
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={photo2}
+                            alt="Third slide"
+                            style={{
+                                margin: '-10%',
+                                marginLeft: "10%"
+                            }} />
+
+
+
+
+
+                    </Carousel.Item>
+                    <Carousel.Item >
+                        <img
+                            className="d-block w-100"
+                            src={photo3}
+                            alt="Third slide"
+                            style={{
+                                margin: '-10%',
+                                marginLeft: "10%"
+                            }}
+                        />
+
+
+
+
+                    </Carousel.Item>
+
+                </Carousel>
                 <br />
                 <br />
 
-                <div style={{ backgroundColor: '#f8f9fa' }}>
+                <div >
                     <div style={{ display: 'flex' }}>
                         <img style={{
-                            width: '50%',
-                            marginLeft: '1%', height: '49%'
+                            width: '64%',
+                            marginLeft: '1%', height: '49%', maxWidth: '62%'
                         }} src={photo4} className="img-fluid" alt="Responsive image" />
 
 
-                        <div className="paragraph">
+                        <div className="paragraph" style={{ margin: '4%', textAlign: 'justify', backgroundColor: '#f8f9fa', padding: '2%', paddingTop: '4%', marginTop: '2%' }}>
 
                             L’expérience du <b>team building outdoor</b> présente une multitude de <b>challenges</b> ,
                 le mental est alors amené à se défaire du superflu et les corps à
-                dépasser leurs limites ensembles. L’équipe forme finalement
+                dépasser leurs limites ensembles.<br /> L’équipe forme finalement
                 une seule grande <b> masse énergétique</b>.
             </div>
 
                     </div>
                     <br />
-                    <div style={{ display: 'flex' }}>
-                        <div className="paragraph2">
-                            <b>L’outdoor</b> permet également de renforcer <b>l’esprit aventurier</b>
+                    <div style={{ display: 'flex', marginTop: '2%' }}>
+                        <div >
+                            <div className="paragraph" style={{
+                                margin: '9%', textAlign: 'justify', backgroundColor: '#f8f9fa', padding: '7%', paddingRight: '9%', marginTop: '-13%',
+                                marginBottom: '6%',
+                                paddingBottom: '1%'
+                            }}>
+                                <b>L’outdoor</b> renforce <b>l’esprit aventurier </b>
                 des
                 participants,
                 de réveiller leur curiosité et d’ainsi dévoiler leurs <b> compétences cachées</b> .
                 <br /> <br />
-                            <div>
-                                Par ailleurs les temps de <b>méditation</b>
+                            </div>
+                            <div className="paragraph" style={{
+                                margin: '9%', marginBottom: '-4%',
+                                textAlign: 'justify', backgroundColor: '#f8f9fa', padding: '7%', marginBottom: '-13%'
+                            }}>
+                                Par ailleurs les temps de <b>méditation </b>
                     et de <b>repos</b> suite
                     à l’effort constituent un
                     excellent moyen pour les membres de l’équipe de renouveler leurs énergies,
-                    <b>se reconnecter</b>
+                    <b>se reconnecter </b>
                     à eux même,au monde et aux personnes qui les entourent.
 
                 </div>
 
 
                         </div>
-                        <img src={photo5} className="img-fluid image2" alt="Responsive image" />
+                        <img src={photo5} style={{ maxWidth: '62%', marginTop: '-2%' }} className="img-fluid image2" alt="Responsive image" />
 
 
 
@@ -115,9 +147,9 @@ const TeamBuilding = () => {
 
 
 
-                <div id="reserver" className="title3" style={{
+                <div className="title3" style={{
                     fontSize: 'xx-large',
-                    fontWeight: 'bold'
+                    fontWeight: 'bold', marginTop: '7%'
                 }} >
                     COMMENT RÉSERVER UN TEAM BUILDING
     </div>
@@ -134,7 +166,7 @@ const TeamBuilding = () => {
                         1. Consulter nos offres de Team Building</a>
                 </button>
 
-                <div className="title3" style={{ textTransform: 'unset', fontSize: 'x-large' }}>
+                <div id="reservation" className="title3" style={{ textTransform: 'unset', fontSize: 'x-large' }}>
                     2. Remplir le formulaire çi-dessous
     </div>
 
@@ -149,8 +181,7 @@ const TeamBuilding = () => {
                             marginTop: '-3%'
                         }}
                             className="btn btn-light">
-                            <a style={{ color: '#093219', fontSize: '17px', textDecoration: 'none' }} href="#about">
-                                Aller en haut </a>
+                            <HashLink style={{ color: '#093219', fontSize: '17px', textDecoration: 'none' }} to="#top">Aller en haut</HashLink>
                         </button>
                     </div>
                 </div>

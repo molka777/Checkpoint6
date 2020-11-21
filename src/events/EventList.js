@@ -25,7 +25,7 @@ const EventList = () => {
 
     ]);
     return (<>
-        <div className="container">
+        <div className="containerlist">
             <div className="row">
                 {Events.map(item => <EventCard key={item.id} imgURl={item.imgUrl} theme={item.theme} activities={item.activities} destination={item.destination} date={item.date} />)}
             </div>

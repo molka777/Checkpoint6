@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const EventCard = (props) => {
 
     return (<>
-        <div className="product-image" id="container">
+        <div className="product-image" id="container1">
             <img src={props.imgURl} alt="event" />
 
             <div className="info">

@@ -3,10 +3,18 @@ import logo from "../res/logo.png";
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom'
-const Menu2 = (props) => {
+import { HashLink } from 'react-router-hash-link';
+
+const Menu2 = () => {
     return (
-        <Navbar className=" bg-light" style={{ zIndex: '1000', position: 'sticky' }} expand="lg">
-            <Navbar.Brand href="#home"><img style={{ height: '107px', width: '251px', marginLeft: '-1%' }} src={logo} alt="logo" />
+        <Navbar className=" bg-light" style={{ zIndex: '1000' }} expand="lg">
+            <Navbar.Brand>
+                <HashLink
+                    to="/" style={{ color: '#093219', fontSize: '17px', textDecoration: 'none' }}
+                    scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'end' })}
+                >
+                    <img style={{ height: '107px', width: '251px', marginLeft: '-1%' }} src={logo} alt="logo" />
+                </HashLink>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse style={{ marginLeft: '4%', marginTop: '2.5%' }} id="basic-navbar-nav">

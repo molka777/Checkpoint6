@@ -214,7 +214,7 @@ const ListTeam2 = () => {
             </div>
             <button type="button" className="bouton btn btn-light" style={{ marginTop: '-28%' }}>
                 <a style={{ color: '#093219', fontWeight: 'bold' }}
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdvRV0sUPYy71hnE9HyyGE6Mpim2h9qarhSrd10E63PIocqkQ/viewform?usp=sf_link" target="_blank">
+                    href="https://docs.google.com/forms/d/147Mi1M5YSfMxAPnlXyiyYpH6AQvMpWhiKpUyoRRjFZw/edit" target="_blank">
                     Rejoindre l'équipe</a>
             </button>
         </>

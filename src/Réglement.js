@@ -1,12 +1,12 @@
 import React from 'react';
 import './css/reglement.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Menu2 from './Navbar/Menu2';
+import Menu6 from './Navbar/Menu6';
 
 const Réglement = () => {
     return (
         <>
-            <Menu2 />
+            <Menu6 />
             <div className="album py-5 bg-light">
                 <h3 className="title3">Notre charte environnementale</h3>
                 <div className="bg-white shadow-sm mx-auto" style={{
